@@ -8,6 +8,7 @@ on:
         type: string
 env:
   IMAGE_REGISTRY: ghcr.io/${{ github.repository_owner }}
+  KERNEL_CACHE_IMAGE_REGISTRY:  ghcr.io/surdy  
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref || github.run_id }}-${{ inputs.fedora_version }}
